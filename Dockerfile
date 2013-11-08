@@ -8,6 +8,7 @@ RUN         wget -O /tmp/urt42.zip 'http://mirror.urtstats.net/urbanterror/Urban
 RUN         unzip -q -d /srv/ /tmp/urt42.zip
 RUN         rm /tmp/urt42.zip
 ADD         ./starturt.sh /srv/UrbanTerror42/start.sh
+RUN         chmod +x /srv/UrbanTerror42/start.sh
 EXPOSE      27960
 CMD         ["/srv/UrbanTerror42/start.sh"]
 
