@@ -1,5 +1,6 @@
 FROM        stackbrew/debian:latest
 MAINTAINER  fly
+ENV         URTROOT /srv/UrbanTerror42
 RUN         apt-get -y update
 RUN         apt-get -y install wget unzip
 RUN         mkdir -p /srv/
